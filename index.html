@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+    <div class="container">
+        <nav>
+
+            <a href="#home" class="logo">Liyabona.</a>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-cta">Let's Work</a>
+
+            <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+
+        </nav>
+    </div>
+    </header>
+
+    <!-----------Home------------->
+    <section id="home" class="home-page">
+        <div class="header-text">
+                <div class="header-content">
+                    <h1>The one-woman tech team ready to bring your next big idea to life</h1>
+                    <p>Hi, I'm Liyabona, an independent software developer, building web applications and digital experiences for companies and professionals</p>
+                </div>
+                <div class="header-img">
+                    <img src="Images/Home.jpg" alt="Liyabona">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------about------------->
+    <section id="about">
+        <div class="container">
+             <div class="about-page">
+                 <img src="Images/About.png" alt="About Liyabona">
+             </div>
+        </div>
+    </section>
+    <!-----------Services------------->
+    <section id="services" class="services">
+    <div class="container">
+
+        <div class="services-intro">
+            <p class="section-label">SERVICES</p>
+
+            <h2>
+                How I can help you
+                bring your idea to life.
+            </h2>
+        </div>
+
+        <div class="services-list">
+
+            <div class="service">
+                <span class="service-number">01</span>
+
+                <div class="service-content">
+                    <h3>Website Development</h3>
+                    <p>
+                        Professional websites built around your
+                        business, brand and goals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service">
+                <span class="service-number">02</span>
+
+                <div class="service-content">
+                    <h3>Portfolio Websites</h3>
+                    <p>
+                        Professional online portfolios designed
+                        to showcase your work and experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service">
+                <span class="service-number">03</span>
+
+                <div class="service-content">
+                    <h3>Website Design</h3>
+                    <p>
+                        Turning your ideas into clean,
+                        user-focused website designs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service">
+                <span class="service-number">04</span>
+
+                <div class="service-content">
+                    <h3>Quality Assurance</h3>
+                    <p>
+                        Thorough testing to make sure your
+                        digital product works as intended.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-----------Projects------------->
+<section id="projects" class="projects">
+
+    <div class="container">
+
+        <div class="projects-heading">
+            <p class="section-label">PROJECTS</p>
+            <h2>Selected work.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <video
+                    src="Videos/project1.mp4"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata">
+                </video>
+
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>Website Development</p>
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
+                <video
+                    src="Videos/project2.mp4"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata">
+                </video>
+
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>Web Application</p>
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <video
+                    src="Videos/project3.mp4"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata">
+                </video>
+
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>Portfolio Website</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+    const projectVideos = document.querySelectorAll('.project-card video');
+
+    projectVideos.forEach(video => {
+
+        video.addEventListener('mouseenter', () => {
+            video.play();
+        });
+
+        video.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+
+    });
+
+</script>
+
+
+<!-----------contact------------->
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact-top">
+
+            <div class="contact-heading">
+                <p class="section-label">CONTACT</p>
+
+                <h2>Let's work together.</h2>
+
+                <p class="contact-intro">
+                    Have an idea, project or website in mind?
+                    I'd love to hear about it.
+                </p>
+            </div>
+
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <span>EMAIL</span>
+                    <a href="mailto:liyabonasobekwa3@gmail.com">
+                        liyabonasobekwa3@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span>PHONE</span>
+                    <a href="tel:+27780772629">
+                        +27 78 077 2629
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span>FOLLOW ME</span>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.tiktok.com/@liya.sobekwa" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/liya_sobekwa/" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@LiyaSobekwa" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/liyabona-sobekwa-3948461b1" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <a href="#header" class="footer-logo">
+                Liyabona.
+            </a>
+
+            <p>
+                © 2026 Liyabona. All rights reserved.
+            </p>
+
+        </footer>
+
+    </div>
+
+</section>
+
+
+<script>
+    function openMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+
+</body>
